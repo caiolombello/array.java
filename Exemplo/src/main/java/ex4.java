@@ -23,7 +23,7 @@ public class ex4 {
             nums[i] = teclado.nextInt();
         }
 
-        System.out.println("Pesquise um número: ");
+        System.out.println("Pesquise um número: "); // TODO: Barra de loading (Threading)
         int search = teclado.nextInt();
 
         for(int j = 0; j < 6; j++){
