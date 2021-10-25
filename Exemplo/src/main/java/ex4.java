@@ -32,6 +32,6 @@ public class ex4 {
             }
         }
 
-        System.out.printf("*** O número aparece %d vezes no vetor ***", qtd);
+        System.out.printf("*** O número %d aparece %d vezes no vetor ***", search, qtd);
     }
 }
