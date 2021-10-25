@@ -13,7 +13,7 @@ public class ex1 {
             System.out.println("Digite um número: ");
             nums[i] = teclado.nextInt();
 
-            if (nums[i] >= 100){
+            if (nums[i] > 100){
                 maior += 1;
             }
         }
