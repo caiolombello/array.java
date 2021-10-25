@@ -17,6 +17,6 @@ public class ex3 {
                 maior.append(nums[i]).append("\n");
             }
         }
-        System.out.printf("Dos números digitados, os maiores que 100 são: %s", maior);
+        System.out.printf("Dos números digitados, os maiores que 100 são:\n%s", maior);
     }
 }
