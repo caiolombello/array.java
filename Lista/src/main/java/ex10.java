@@ -1,22 +1,26 @@
-import javax.swing.*;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ex10 {
     public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
         double[] nums = new double[10];
-        double[] iguais = new double[0];
+        double[] iguais = new double[10];
+        StringBuilder valores = new StringBuilder();
 
         for (int i = 0; i < 10; i++){
-            nums[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite um número:"));
+            System.out.println("Digite um número: ");
+            nums[i] = teclado.nextDouble();
         }
 
-        for (int j = 0; j < 10; j++){   // J percorre o vetor
-            for (int k = 1; k < 10; k++){   // K percorre do segundo para o último
-                if (nums[j] == nums[k]){    // se 0 for igual a 1.. se 1 for igual a 2..
-                    iguais[k] = nums[j];  // iguais[0] = nums[0]
+        for (int j = 0; j < 10; j++){
+            for (int k = 1; k < 10; k++){
+                if ((nums[j] == nums[k]) && (j != k)){
+                    iguais[k] = nums[j];
+                    valores.append(Arrays.toString(new double[]{iguais[k]})).append(", ");
                 }
             }
         }
-        JOptionPane.showMessageDialog(null, String.format("Dos valores inseridos, os iguais são: %s", Arrays.toString(iguais)));
+        System.out.println("Os valores iguais são: " + valores);
     }
 }

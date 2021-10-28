@@ -3,19 +3,14 @@ import java.util.Arrays;
 
 public class ex9 {
     public static void main(String[] args){
-        double[] nums = new double[40];
-        double aux = 0;
+        double[] nums = new double[10];
         double num = 0;
-        int i = 0;
 
-        while (i < 40){
-            i++;
-            aux = num;
-            if (i == 40){
-                System.exit(0);
+        for(int i = 1; i < 10; i++){
+            nums[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite um número:"));
+            for(int j = 0; j < 10; j += 2){
+                nums[i] = num;
             }
-            aux = Double.parseDouble(JOptionPane.showInputDialog("Digite um número:"));
-            nums[i] = aux;
         }
         JOptionPane.showMessageDialog(null, String.format("Vetor: %s", Arrays.toString(nums)));
     }
