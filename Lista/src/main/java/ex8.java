@@ -11,9 +11,9 @@ public class ex8 {
             A[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite um número para o vetor A:"));
             B[i] = Double.parseDouble(JOptionPane.showInputDialog("Digite um número para o vetor B:"));
             if ((i % 2) == 0) {
-                C[i] = A[i];
-            } else {
                 C[i] = B[i];
+            } else {
+                C[i] = A[i];
             }
         }
         JOptionPane.showMessageDialog(null, String.format("Vetor A: %s\nVetor B: %s\nVetor C: %s", Arrays.toString(A), Arrays.toString(B), Arrays.toString(C)));
